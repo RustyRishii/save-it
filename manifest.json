@@ -1,0 +1,10 @@
+{
+	"manifest_version": 3,
+	"name": "SaveIt",
+	"version": "1.0",
+	"description": "Save text and links in Chrome local storage",
+	"permissions": ["storage"],
+	"action": {
+	  "default_popup": "popup.html"
+	}
+  }
