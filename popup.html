@@ -1,17 +1,32 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>SaveIt</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <div class="container">
-    <h1>SaveIt</h1>
-    <textarea id="textInput" placeholder="Enter text to save..."></textarea>
-    <input type="text" id="linkInput" placeholder="Enter link to save...">
-    <button id="saveButton">Save</button>
-    <div id="savedItems"></div>
-  </div>
-  <script src="script.js"></script>
-</body>
+
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>SaveIt</title>
+		<link rel="stylesheet" href="styles.css">
+	</head>
+
+	<body>
+		<div class="container">
+			<p class="heading">SaveIt</p>
+			<div class="nestedContainer">
+				<div id="savedItems"></div>
+			</div>
+
+			<!-- Move this section to the bottom -->
+			<div class="bottom-fixed">
+				<div class="inputsAndButtons">
+					<input type="text" id="textInput" placeholder="Enter text">
+					<input type="text" id="linkInput" placeholder="Enter link to save...">
+				</div>
+				<div class="buttonContainer">
+					<button class="saveButton" id="saveButton">Save it</button>
+					<button class="clearButton" id="clearButton">Clear All</button>
+				</div>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+
 </html>
