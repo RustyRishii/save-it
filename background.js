@@ -39,3 +39,14 @@ chrome.contextMenus.onClicked.addListener((info, tab) => {
         });
     }
 });
+
+chrome.commands.onCommand.addListener(function(command) {
+    if (command === "open_extension") {
+      chrome.action.openPopup(function() {
+        if (chrome.runtime.lastError) {
+          console.error(chrome.runtime.lastError);
+        }
+      });
+    }
+  });
+  
